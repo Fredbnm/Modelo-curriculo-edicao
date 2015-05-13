@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Curriculo</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-app ng-controller="InlineEditorController">
+	<div class="container">
+		<div class="box-10 ng-click="hideEdicao()"">
+			<div class="box-3">
+				<div class="elipse">
+					<img src="img/perfil.jpg" alt="foto perfil" title="foto perfil">
+				</div>
+
+			</div>
+
+
+			<div class="box-5">
+				<div class="edicao" ng-click="$event.stopPropagation()" ng-show="mostrarEdicao">
+
+					<input type="text" ng-model="value" />
+				</div>
+				<h2>Sobre</h2>
+				<p ng-click="toggleTooltip($event)">{{value}}</p>
+
+			</div>
+			<div class="box-5">
+				<div class="edicao" ng-click="$event.stopPropagation()" ng-show="mostrarEdicao">
+
+					<input type="text" ng-model="value" />
+				</div>
+				<h2>Habilidades</h2>
+				<p ng-click="toggleTooltip($event)">{{value}}</p>
+
+			</div>
+			<div class="box-5">
+				<div class="edicao" ng-click="$event.stopPropagation()" ng-show="mostrarEdicao">
+
+					<input type="text" ng-model="value" />
+				</div>
+				<h2>Experiência</h2>
+				<p ng-click="toggleTooltip($event)">{{value}}</p>
+
+			</div>
+
+
+		</div><!--box geral-->
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
